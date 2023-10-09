@@ -1,0 +1,436 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    color: #ededed;
+}
+
+.intro{
+   display: flex;
+   flex-direction: column;
+   margin: 6rem;
+}
+button{
+    display: inline-block;
+}
+.box button{
+    margin: 20px;
+    padding: 15px;
+    width: 10%;
+    font-size: 18px;
+    color: #183D3D;
+    border-radius: 25px;
+    background-color: transparent;
+    border: 2px solid #183D3D;
+}
+.box button:hover{
+    background-color: #1899d4;
+    transition: 0.1s ;
+    box-shadow: 2px 2px 2px 2px #1293cf;
+    border: none;
+    cursor: pointer;
+}
+.nav{
+  padding: 20px;
+}
+.links{
+    float: right;
+    margin-right: 3rem;
+}
+.links a{
+    padding: 10px;
+    text-decoration: none;
+    color: #ededed;
+}
+.links a:hover{
+    color: #1899d4;
+    text-decoration: underline;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.blog{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin: 30px;
+}
+.services{
+  height: 70vh;
+  background:  #040D12;
+}
+.services h1{
+  text-align: center;
+  padding: 40px;
+}
+.services h1 span{
+  color:  #1899d4;
+}
+.tin{
+    border-radius: 5px;
+    background-color: #040D12;
+    box-shadow: 1px 1px 20px #1899d4,
+    1px 1px 40px #094e6e; 
+    height: 300px;
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+}
+.tin p{
+  padding: 5px;
+}
+.tin h3{
+  text-align: center;
+  padding: 5px;
+}
+.tin a{
+    text-decoration: none;
+    color:  #1899d4;
+    padding: 5px;
+}
+.tin a:hover{
+    text-decoration: underline;
+}
+/*animation*/
+.animated-text{
+  font-size: 40px;
+  font-weight: 600;
+  min-width: 280px;
+  padding-bottom: 10px;
+}
+        
+.animated-text span{
+  position: relative;
+}
+.animated-text span::before{
+  content: "Youtuber";
+  color: #1899d4;
+  animation: words 20s infinite;
+}
+
+.animated-text span::after{
+  content: "";
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 100%;
+  background-color: #040D12;
+  border-left: 2px solid  #1899d4;
+  right: -8px;
+  animation: cursor .8s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+  to{
+      border-left: 2px solid #1899d4;
+  }
+}
+
+@keyframes words {
+  0%,20%{
+      content: "n Engineer";
+  }
+  21%,40%{
+      content: "Coder";
+  }
+  41%,60%{
+      content: "Web developer";
+  }
+  61%,80%{
+      content: "n Artist(Pencil SKetching)";
+  }
+  81%,100%{
+      content: "Dreamer";
+  }
+}
+
+@keyframes typing {
+  10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+      width: 0;
+  }
+  5%,20%,25%,40%,45%,60%,65%,80%,85%{
+      width: calc(100% + 8px);
+  }
+}        
+        
+.logo{
+  float: left;
+  font-size: 30px;
+}
+.logo span{
+  color: #03a9f4;
+}
+.header{
+  background: #040D12;
+  height: 90vh;
+}
+.about{
+  display: flex;
+  flex-direction: column;
+  padding: 6rem;
+  height: 70vh;
+  background: #183D3D;
+}
+.aboutme{
+  line-height: 2rem;
+  width: 70%;
+}
+.aboutme h2{
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+.aboutme h4{
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+.aboutme span{
+  color: #03a9f4;
+}
+.content {
+  position: relative;
+  text-align: center;
+  padding-bottom: 6rem;
+}
+
+.container{
+  width: 600px;
+  height: 500px;
+  padding: 75px 90px;
+  margin-left: 120px;
+}
+.heading1{
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 5px;
+  margin-bottom: 50px;
+}
+.contact{
+height: 35vh;
+background-color: #183D3D;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+
+}
+.contact .link{
+font-size: 30px;
+}
+.link a{
+color: whitesmoke;
+padding: 10px;
+}
+.link a:hover{
+color: #183D3D;
+background: whitesmoke;
+}
+.section{
+display: flex;
+flex-direction: column;
+font-size: 18px;
+font-family: sans-serif;
+}
+.section a{
+text-decoration: none;
+color: whitesmoke;
+}
+.section a:hover{
+color: #147BBC;
+}
+
+
+/*progresswrap section*/
+.prgress{
+   height: 85vh;
+   background-color: #040D12;
+   padding: 20px;
+}
+.prgress span{
+   color: #03a9f4;
+}
+.prgress h1{
+   text-align: center;
+   padding: 30px;
+}
+.progesswrap{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.pro h2{
+   text-align: center;
+}
+/*percentage bar*/
+.progressbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+/*end*/
+.animated-progress {
+    width: 500px;
+    height: 20px;
+    border-radius: 25px;
+    margin: 20px 10px;
+    border: 1px solid rgb(29, 157, 199);
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .animated-progress span {
+    height: 100%;
+    display: block;
+    width: 0;
+    color: rgb(255, 251, 251);
+    line-height: 20px;
+    position: absolute;
+    text-align: end;
+    padding-right: 5px;
+  }
+  
+  .progress-blue span {
+    background-color: #C95D2E;
+  }
+  .progress-green span {
+    background-color: #147BBC;
+  }
+  .progress-purple span {
+    background-color: #B0BC1E;
+  }
+  .progress-red span {
+    background-color: #C32BC9;
+  }
+  .progress-yellow span {
+    background-color: #FE0000;
+  }
+  
+  /*circular progress bars*/
+  .circle_box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .cirbox h2{
+    text-align: center;
+    margin: 20px;
+  }
+  .cir h3{
+    text-align: center;
+    padding: 5px;
+  }
+  /*end*/
+  @keyframes progress {
+        0% { --percentage: 0; }
+        100% { --percentage: var(--value); }
+      }
+      
+      @property --percentage {
+        syntax: '<number>';
+        inherits: true;
+        initial-value: 0;
+      }
+      
+      [role="progressbar"] {
+        --percentage: var(--value);
+        --primary: #369;
+        --secondary: #adf;
+        --size: 100px;
+        animation: progress 2s 0.5s forwards;
+        width: var(--size);
+        aspect-ratio: 1;
+        border-radius: 50%;
+        position: relative;
+        overflow: hidden;
+        display: grid;
+        place-items: center;
+      }
+      
+      [role="progressbar"]::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: conic-gradient(var(--primary) calc(var(--percentage) * 1%), var(--secondary) 0);
+        mask: radial-gradient(white 55%, transparent 0);
+        mask-mode: alpha;
+        -webkit-mask: radial-gradient(#0000 55%, #000 0);
+        -webkit-mask-mode: alpha;
+      }
+      
+      [role="progressbar"]::after {
+        counter-reset: percentage var(--value);
+        content: counter(percentage) '%';
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: calc(var(--size) / 5);
+        color: var(--primary);
+      }
+      
+      /* demo */
+      .circle{
+        width: 150px;
+        height: 150px;
+        margin: 10px;
+      }
+  
+  h1{
+    font-size: 3rem;
+    color: white;
+  }
+  
+  .content h2 {
+    color: #fff;
+    font-size: 4em;
+    position: absolute;
+  }
+  
+  .content h2:nth-child(1) {
+    color: transparent;
+    -webkit-text-stroke: 2px #03a9f4;
+  }
+  
+  .content h2:nth-child(2) {
+    color: #03a9f4;
+    animation: animate 4s ease-in-out infinite;
+  }
+  
+  @keyframes animate {
+    0%,
+    100% {
+      clip-path: polygon(
+        0% 45%,
+        16% 44%,
+        33% 50%,
+        54% 60%,
+        70% 61%,
+        84% 59%,
+        100% 52%,
+        100% 100%,
+        0% 100%
+      );
+    }
+  
+    50% {
+      clip-path: polygon(
+        0% 60%,
+        15% 65%,
+        34% 66%,
+        51% 62%,
+        67% 50%,
+        84% 45%,
+        100% 46%,
+        100% 100%,
+        0% 100%
+      );
+    }
+  }
+         
